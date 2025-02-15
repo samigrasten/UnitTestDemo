@@ -1,15 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestDemo", "UnitTestApi\UnitTestDemo.csproj", "{08E180BB-18CA-4812-A9F6-55761F1AA97B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTestDemo", "UnitTestApi\UnitTestDemo.csproj", "{08E180BB-18CA-4812-A9F6-55761F1AA97B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestDemo.Tests", "UnitTestDemo.Tests\UnitTestDemo.Tests.csproj", "{0EF39789-16CC-4AFC-B320-46B1F065EAAE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTestDemo.Tests", "UnitTestDemo.Tests\UnitTestDemo.Tests.csproj", "{0EF39789-16CC-4AFC-B320-46B1F065EAAE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoListDemo", "ToDoList\ToDoListDemo.csproj", "{2780B307-2B1A-49A9-9E42-500C12278D8E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToDoListDemo", "ToDoList\ToDoListDemo.csproj", "{2780B307-2B1A-49A9-9E42-500C12278D8E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoListTests", "ToDoListTests\ToDoListTests.csproj", "{9B2539BF-6760-45BC-ACDB-B591C90F9D25}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToDoListDemo.Tests", "ToDoListTests\ToDoListDemo.Tests.csproj", "{9B2539BF-6760-45BC-ACDB-B591C90F9D25}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

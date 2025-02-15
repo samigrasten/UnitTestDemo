@@ -1,14 +1,13 @@
 ﻿using Shouldly;
-using ToDoListDemo;
-using ToDoListTests.Builders;
+using ToDoListDemo.Tests.Builders;
 using Xunit;
 
-namespace ToDoListTests
+namespace ToDoListDemo.Tests
 {
     public class ToDoListTests
     {
         private readonly ToDoList _sut = new();
-        private readonly ToDoItem _itemInToDoList  = new ToDoItemBuilder()
+        private readonly ToDoItem _itemInToDoList = new ToDoItemBuilder()
             .WithTitle("Original title")
             .Build();
 
@@ -16,12 +15,12 @@ namespace ToDoListTests
         {
             _sut.AddItem(_itemInToDoList);
         }
-        
+
         [Fact]
         public void NewItemShouldBeAddedToToDoList()
         {
             var item = new ToDoItemBuilder().Build();
-            
+
             // Act
             _sut.AddItem(item);
 
@@ -34,9 +33,9 @@ namespace ToDoListTests
         {
             const string newTitle = "new Title";
             _itemInToDoList.Title = newTitle;
-            
+
             _sut.UpdateItem(_itemInToDoList);
-            
+
             _sut.GetItemById(_itemInToDoList.Id)!.Title.ShouldBe(newTitle);
         }
 
@@ -44,7 +43,7 @@ namespace ToDoListTests
         public void ItemShouldBeRemovedFromList()
         {
             _sut.DeleteItem(_itemInToDoList.Id);
-            
+
             _sut.GetAllItems().Count.ShouldBe(0);
         }
     }

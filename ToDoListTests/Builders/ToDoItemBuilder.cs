@@ -1,6 +1,6 @@
 ﻿using ToDoListDemo;
 
-namespace ToDoListTests.Builders;
+namespace ToDoListDemo.Tests.Builders;
 
 public class ToDoItemBuilder
 {
@@ -10,9 +10,9 @@ public class ToDoItemBuilder
     {
         _item = new ToDoItem
         {
-            Id = 1, 
-            Title = "Test Item", 
-            Description = "This is a test item", 
+            Id = 1,
+            Title = "Test Item",
+            Description = "This is a test item",
             IsCompleted = false
         };
     }
@@ -34,7 +34,7 @@ public class ToDoItemBuilder
         _item.Description = description;
         return this;
     }
-    
+
     public ToDoItemBuilder IsCompleted(bool isCompleted)
     {
         _item.IsCompleted = isCompleted;
